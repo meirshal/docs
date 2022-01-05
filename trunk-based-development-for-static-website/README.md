@@ -13,7 +13,7 @@ Most reactjs fw/build systems (like next.js/CRA, etc.) allow you to build your s
 ### Better solution
 #### Goal
 Build the website once and inject configuration to the built bundle on deployment.
-### How to do that
+#### How to do that
 1. Modify the html template (usually under public/index.html) to contain the following tag under the `<head>` tag: 
 ```
 <script>
