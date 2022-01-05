@@ -20,7 +20,7 @@ Build the website once and inject configuration to the built bundle on deploymen
    window.environment = JSON.parse('{{ ENVIRONMENT_CONFIG }}');
 </script>
 ```
-2. Create a new ts that uses this injected configuration, to be used whenever configuration access is needed:
+2. Create a new ts file that uses this injected configuration, to be used whenever configuration access is needed:
 ```typescript
 const environment = window['environment'] || {};
 const getEnv = (key: string, defaultValue?) => environment[key] || process.env[key] || defaultValue;
